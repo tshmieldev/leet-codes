@@ -16,19 +16,17 @@ class Solution(object):
         
         
         counterArray = [0] * (122 - 65 + 1)
-        counterSum = 0
+        counterSum = len(t)
+
         for char in t:
             counterArray[ord(char) - 65] += 1
-            counterSum += 1
+          
 
         charSet = set(t)
-
         candidate = ""
-      
+
         l = 0
         r = -1
-
-        
         while True:
             while l < len(s) and s[l] not in charSet:
                 l += 1
