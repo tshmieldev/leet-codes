@@ -15,13 +15,11 @@ class Solution(object):
             if not node:
                 return None
             
-            if node.left:
-                dfs(node.left)
-            if node.right:
-                dfs(node.right)
-            
+            dfs(node.left)
+            dfs(node.right)
+        
             node.left, node.right = node.right, node.left
-
+        
             return node
         
         return dfs(root)
