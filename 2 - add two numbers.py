@@ -36,4 +36,3 @@ class Solution(object):
             res.next = ListNode(carry)
 
         return ret
-        

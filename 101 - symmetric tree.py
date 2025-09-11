@@ -31,4 +31,3 @@ class Solution(object):
                 queue.append((l.left, r.right))
                 queue.append((l.right, r.left))
             return True
-        pass
