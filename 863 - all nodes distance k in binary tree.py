@@ -52,5 +52,3 @@ class Solution(object):
                     q.append((neighbor, level + 1))
 
         return result
-
-
