@@ -1,3 +1,7 @@
+# This is hilariously bad.
+# I later changed the submission to any(char in 'aeiou' for char in s)
+# But this O(n^4) code remains here, as I find it funny.
+
 class Solution(object):
     def doesAliceWin(self, s):
         """
