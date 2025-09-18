@@ -6,7 +6,6 @@ class MedianFinder(object):
         self.maxh = []
         self.minh = []
 
-
     def addNum(self, num):
         """
         :type num: int
@@ -24,7 +23,6 @@ class MedianFinder(object):
                 heapq.heappush(self.minh, -heapq.heappop(self.maxh))
                 heapq.heappush(self.maxh, -heapq.heappop(self.minh))
 
-
     def findMedian(self):
         """
         :rtype: float
@@ -34,18 +32,5 @@ class MedianFinder(object):
 
         if n > m:
             return -self.maxh[0]
-        return ( -self.maxh[0] + self.minh[0] ) / 2
+        return ( -self.maxh[0] + self.minh[0] ) / 2.0
         
-
-
-# Your MedianFinder object will be instantiated and called as such:
-# obj = MedianFinder()
-# obj.addNum(num)
-# param_2 = obj.findMedian()
-
-MF = MedianFinder()
-MF.addNum(1)
-MF.addNum(2)
-print(MF.findMedian())
-MF.addNum(3)
-print(MF.findMedian())
