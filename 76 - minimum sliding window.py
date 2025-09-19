@@ -14,19 +14,17 @@ class Solution(object):
                     return False
             return True
         
-        
         counterArray = [0] * (122 - 65 + 1)
         counterSum = len(t)
 
         for char in t:
             counterArray[ord(char) - 65] += 1
-          
 
         charSet = set(t)
         candidate = ""
-
         l = 0
         r = -1
+        
         while True:
             while l < len(s) and s[l] not in charSet:
                 l += 1
@@ -47,7 +45,3 @@ class Solution(object):
             counterArray[ord(s[l]) - 65] += 1
             counterSum += 1
             l += 1
-            
-s = Solution()
-
-print(s.minWindow("adobecodebanc", "abc"))
