@@ -38,6 +38,3 @@ class Solution:
         if lval > rval:
             return -1
         return 1
-
-S = Solution()
-S.compareVersion("1.01", "1.001")
