@@ -15,5 +15,3 @@ class Solution(object):
                 dp[i] = min(dp[i], 1+dp[idx])
     
         return -1 if dp[-1] == float('inf') else dp[-1]
-S = Solution()
-S.coinChange([1,2,5], 11)

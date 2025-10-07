@@ -37,5 +37,3 @@ class Solution(object):
         for c in common:
             node = node.left if c == 'L' else node.right
         return node
-    
-s = Solution()
