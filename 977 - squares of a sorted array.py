@@ -18,7 +18,3 @@ class Solution(object):
                 R -= 1
             res[i] = val ** 2
         return res
-
-s = Solution()
-
-s.sortedSquares([-5,-1,0,3,4])
