@@ -16,6 +16,3 @@ class Solution:
             else:
                c += 1
         return ptr
-
-S = Solution()
-print(S.compress(["a","a", 'a', "b","b","a","a"]))
