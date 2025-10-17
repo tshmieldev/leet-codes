@@ -22,5 +22,3 @@ class Solution:
             return out + int(nr) * self.decodeString(s[beg:ptr]) + s[ptr:]
         else:
             return out
-S = Solution()
-S.decodeString('3[a]2[bc]')
